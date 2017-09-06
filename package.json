@@ -1,0 +1,29 @@
+{
+  "name": "knex-demo",
+  "version": "0.0.1",
+  "description": "knex-demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node db-check.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cklanac/demo-postgress-knex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "knex": "^0.13.0",
+    "pg": "^7.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "faker": "^3.1.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
