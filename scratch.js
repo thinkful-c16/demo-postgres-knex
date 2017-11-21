@@ -50,3 +50,14 @@ knex('items')
   .where('completed', true)
   .del()
   .then(console.log);
+
+knex('items')
+  .join('users', 'items.user_id', 'users.id')
+  .select('items.id', 'name', 'username')
+  .then(console.log);
+
+knex('items')
+  .join('users', 'items.user_id', 'users.id')
+  .select('items.id as item_id', 'users.id as user_id', 'name', 'username')
+  .where('items.id', 1002)
+  .then(console.log);
