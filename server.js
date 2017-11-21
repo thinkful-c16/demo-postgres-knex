@@ -16,7 +16,7 @@ app.get('/restaurants', (req, res) => {
     .from('restaurants')
     .limit(10)
     .then(function (results) {
-      res.json({'foo': 'bar'});
+      res.json(results);
     });
 });
  
